@@ -74,6 +74,10 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+	<scm>
+		<connection>scm:git:https://github.com/lotfy1893/sfg-pet-clinic.git</connection>
+		<developerConnection>scm:git:https://github.com/lotfy1893/sfg-pet-clinic.git</developerConnection>
+	</scm>
 
 	<build>
 		<plugins>
@@ -87,6 +91,14 @@
 				<version>2.5.3</version>
 				<configuration>
 					<goals>install</goals>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.11.2</version>
+				<configuration>
+					<connectionType>developerConnection</connectionType>
 				</configuration>
 			</plugin>
 		</plugins>
